@@ -5,27 +5,27 @@ export default function MusicPlayer() {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
 
-  
+
   const togglePlay = () => {
     if (!audioRef.current) return;
 
     if (isPlaying) {
-      audioRef.current.pause();  
-      audioRef.current.volume = 1;  
+      audioRef.current.pause();
+      audioRef.current.volume = 1;
     } else {
       audioRef.current.play().catch((error) => {
         console.log('Erro ao tentar tocar áudio:', error);
       });
-      audioRef.current.volume = 0.2;  
+      audioRef.current.volume = 0.2;
     }
 
-    setIsPlaying(!isPlaying);  
+    setIsPlaying(!isPlaying);
   };
 
   return (
     <>
       <audio ref={audioRef} loop>
-        <source src="/music.mp3" type="audio/mpeg" />
+        <source src="/projeto-harry/music.mp3" type="audio/mpeg" />
         Seu navegador não suporta áudio.
       </audio>
 

@@ -4,6 +4,13 @@ Este é um projeto interativo inspirado no universo de **Harry Potter**, criado 
 
 ---
 
+
+## Preview 
+
+![Preview do site](./preview.png)
+
+---
+
 ## ✨ Funcionalidades
 
 - 🎩 **Sorteio de Casas** — Um chapéu seletor animado sorteia uma das quatro casas.

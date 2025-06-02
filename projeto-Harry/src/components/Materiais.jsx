@@ -4,32 +4,32 @@ import MaterialCard from './MaterialCard';
 const materiaisData = [
   {
     name: 'Olivaras',
-    image: '../src/assets/materiais-varinha.jpg',
+    image: './src/assets/materiais-varinha.jpg',
     description: 'As varinhas mais poderosas, feitas das madeiras mais raras.',
   },
   {
     name: 'Livro de Feitiços',
-    image: '../src/assets/materiais-livro.png',
+    image: './src/assets/materiais-livro.png',
     description: 'Essencial para aprender os feitiços mais importantes.',
   },
   {
     name: 'Caldeirão',
-    image: '../src/assets/materiais-caldeirao.png',
+    image: './src/assets/materiais-caldeirao.png',
     description: 'Use para preparar poções mágicas de forma segura.',
   },
   {
     name: 'Roupa de Gala',
-    image: '../src/assets/materiais-roupa.png',
+    image: './src/assets/materiais-roupa.png',
     description: 'Roupa especial para os eventos mais importantes.',
   },
   {
     name: 'Coruja de entrega',
-    image: '../src/assets/materiais-coruja.png',
+    image: './src/assets/materiais-coruja.png',
     description: 'Para enviar cartas e itens para os familiares',
   },
   {
     name: 'Vassoura Mágica',
-    image: '../src/assets/materiais-vassoura.png',
+    image: './src/assets/materiais-vassoura.png',
     description: 'Ideal para partidas de Quadribol emocionantes',
   },
 ];

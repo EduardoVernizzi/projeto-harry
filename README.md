@@ -1,12 +1,31 @@
-# React + Vite
+# 🧙‍♂️ Plataforma Interativa de Hogwarts - Projeto React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto interativo inspirado no universo de **Harry Potter**, criado com **React.js**, que simula a jornada de um aluno rumo a Hogwarts! Desde o recebimento da carta, sorteio da casa até o embarque no Expresso de Hogwarts.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Funcionalidades
+
+- 🎩 **Sorteio de Casas** — Um chapéu seletor animado sorteia uma das quatro casas.
+- 🧰 **Materiais Escolares** — Visualização dos itens essenciais para começar o ano.
+- 🧑‍🏫 **Sessão de Aulas** — Apresentação dos professores de Hogwarts.
+- ⏳ **Contagem Regressiva** — Um contador que marca o tempo restante até o embarque (1º de setembro às 11h).
+- 🌗 **Transições Visuais (Fade In/Fade Out)** — Tela esmaece ao embarcar no trem, simulando uma viagem mágica.
+- 🎵 **Trilha Sonora Imersiva** — Música ambiente automática.
+- 📱 **Responsivo** — Visual adaptável para dispositivos móveis com **Bootstrap**.
+- 🚀 **Componente Reutilizável** — Estrutura dividida em componentes React para fácil manutenção.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- [React.js](https://reactjs.org/)
+- [Bootstrap](https://getbootstrap.com/)
+- [SweetAlert2](https://sweetalert2.github.io/)
+- [Google Fonts - Cinzel](https://fonts.google.com/specimen/Cinzel)
+- [ChatGPT (OpenAI)](https://chat.openai.com/) – Suporte técnico e criação de lógica
+- [ImageFX (OpenAI)](https://openai.com/imagefx) – Geração de imagens mágicas para o projeto
+
+---

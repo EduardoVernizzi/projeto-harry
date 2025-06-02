@@ -4,6 +4,12 @@ Este é um projeto interativo inspirado no universo de **Harry Potter**, criado 
 
 ---
 
+## Preview 
+
+![Preview](/preview.png)
+
+---
+
 
 
 ## ✨ Funcionalidades

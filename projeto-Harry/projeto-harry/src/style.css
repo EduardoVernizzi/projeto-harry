@@ -1,0 +1,627 @@
+/*============Seção de Tags====================*/
+
+* {
+  font-family: 'Cinzel', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/*============== Header ======================*/
+
+.header-main {
+  background-color: #000000;
+  font-size: 1.5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1030;
+  box-shadow: 0px 0px 10px #ffffff69;
+}
+
+.nome-principal {
+  font-size: 2rem;
+  color: #f9cf46;
+
+
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+.nome-principal:hover {
+  color: #d4af37;
+}
+
+
+
+
+/*=========== Chamada Principal ==============*/
+
+.chamada-principal {
+  background-image: url("./assets/main1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  padding-top: 60px;
+}
+
+.titulo-chamada {
+  color: #d4af37;
+  font-size: 3em;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.paragrafo-chamada {
+  color: #d4af37;
+  font-size: 1.4em;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.box-main {
+  margin: 5.5rem auto;
+  height: 60vh;
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 1.5rem;
+  transition: box-shadow 0.4s ease-in-out;
+}
+
+.box-main:hover {
+  transform: translateY(-20px);
+  transition: 1s;
+  background-color: rgba(0, 0, 0, 0.957);
+  cursor: pointer;
+  box-shadow: 0 10px 50px rgba(255, 255, 255, 0.3);
+  /* sombra visível ao hover */
+
+}
+
+/* Estilo do botão */
+.btn-next-section {
+  background-color: #d4af37;
+  text-decoration: none;
+  color: #000;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-next-section:hover {
+  background-color: #97781b;
+  color: #fff;
+
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .box-main {
+    width: 90%;
+    height: auto;
+    margin: 15rem auto;
+    padding: 1.5rem;
+  }
+
+  .titulo-chamada {
+    font-size: 2em;
+    padding-top: 1.5rem;
+  }
+
+  .paragrafo-chamada {
+    font-size: 1em;
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .titulo-chamada {
+    font-size: 1.5em;
+  }
+
+  .paragrafo-chamada {
+    font-size: 0.9em;
+  }
+
+  .chamada-principal {
+    height: 100vh;
+  }
+
+  .box-main {
+    margin: 8rem auto;
+  }
+}
+
+/*================== Seletor ===========================*/
+
+/* Estilo do Chapéu Seletor */
+#chapeu-seletor {
+  height: 100vh;
+  background-color: #000000;
+  color: #d4af37;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.btn-casa-selecao {
+  background-color: #d4af37;
+  color: #000;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-casa-selecao:hover {
+  background-color: #97781b;
+}
+
+/* Seção de Cards */
+.section-container {
+  background: #000000;
+  border-radius: 25px;
+  padding: 30px;
+  width: 100%;
+  max-width: 900px;
+  color: white;
+  margin: 50px auto 0;
+  min-height: 200px;
+  transition: 0.3s ease;
+}
+
+.section-container:hover {
+  transform: translateY(-10px);
+  transition: 1s;
+  background-color: rgba(0, 0, 0, 0.957);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card:hover .card-title {
+  text-shadow: 0 0 10px rgba(255, 215, 0, 1);
+}
+
+/* Grid dos Cards */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.col-lg-3,
+.col-md-4,
+.col-sm-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Transição suave nos cards */
+.card-body {
+  transition: all 0.3s ease;
+}
+
+.card:hover .card-body {
+  transform: scale(1.05);
+}
+
+.gif-chapeu {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ----- RESPONSIVO ----- */
+
+/* Mobile até 576px */
+@media (max-width: 576px) {
+  #chapeu-seletor {
+    font-size: 1.4rem;
+    padding: 20px 10px;
+  }
+
+  .section-container {
+    padding: 15px;
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+
+/* Tablets até 768px */
+@media (max-width: 768px) {
+  #chapeu-seletor {
+    font-size: 1.6rem;
+  }
+
+  .section-container {
+    padding: 20px;
+    width: 85%;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+}
+
+/* Desktops grandes */
+@media (min-width: 992px) {
+  .card-title {
+    font-size: 1.6rem;
+  }
+}
+
+
+/*=================== Materiais ==================*/
+
+#materiais {
+  background-color: #000;
+  color: #f5deb3;
+  /* dourado claro para o texto */
+  padding: 60px 0;
+  font-family: 'Cinzel', serif;
+  position: relative;
+  margin-top: 0;
+  /* Remove margens externas */
+}
+
+/* Remove qualquer gap entre as seções */
+section {
+  margin: 0;
+  padding: 0;
+}
+
+/* Opcional: no container dentro da seção mantém o padding interno */
+#materiais>.container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Mantém o estilo dos títulos e textos */
+#materiais h2 {
+  font-size: 2.8rem;
+  text-shadow: 0 0 8px #d4af37cc;
+  margin-bottom: 1rem;
+}
+
+#materiais p {
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
+  text-shadow: 0 0 5px #bfa854cc;
+}
+
+.card {
+  min-height: 100%;
+  background-color: #111;
+  border: 1px solid #d4af37;
+  color: #f5deb3;
+  transition: transform 0.3s ease;
+  border-radius: 12px;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+}
+
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 0.95rem;
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 576px) {
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.85rem;
+  }
+
+  .card-img-top {
+    height: 150px;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+  }
+
+  p {
+    font-size: 0.95rem !important;
+  }
+}
+
+/*=================== Aulas ==================*/
+#aulas {
+  background-color: #000;
+  color: #f5deb3;
+  padding: 60px 0;
+  font-family: 'Cinzel', serif;
+  position: relative;
+  margin-top: 0;
+  min-height: 100vh;
+  padding-bottom: 150px;
+  /* Certificando que ocupa o restante da tela */
+}
+
+#aulas .container {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+#aulas h2 {
+  font-size: 2.8rem;
+  text-shadow: 0 0 8px #d4af37cc;
+  margin-bottom: 1rem;
+  text-align: center;
+  /* Garantir que o título fique centralizado */
+}
+
+#aulas h5 {
+  font-size: 2rem;
+  text-shadow: 0 0 8px #d4af37;
+  margin-bottom: 1rem;
+  text-align: center;
+  /* Garantir que o título fique centralizado */
+}
+
+#aulas p {
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
+  text-shadow: 0 0 5px #bfa854;
+}
+
+#aulas .carousel,
+#aulas .carousel-inner,
+#aulas .carousel-item {
+  position: relative;
+  min-height: 60vh;
+  max-height: 75vh;
+}
+
+/* Imagem dentro do carrossel */
+#aulas .carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+
+/* Legenda do Carrossel */
+.carousel-caption {
+  position: absolute;
+  bottom: 10px;
+  /* Mantém um bom espaço para a legenda */
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.5rem 1rem;
+  color: #f5deb3 !important;
+  text-shadow: 0 0 5px #000;
+  z-index: 1;
+  /* MENOR que os botões para não sobrepor */
+  max-width: 90%;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
+/* Botões de navegação */
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 2;
+  /* MAIS ALTO que a legenda para ficar clicável */
+}
+
+@media (max-width: 460px) {
+
+  /* Garantir que a imagem ocupe o máximo de espaço possível no carrossel */
+  .carousel-item img {
+    min-height: 280px;
+    max-height: 280px;
+    /* altura maior */
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Ajuste da altura do carrossel no mobile */
+  #aulas .carousel,
+  #aulas .carousel-inner,
+  #aulas .carousel-item {
+    min-height: 80vh;
+    /* Altura maior para mobile */
+  }
+
+  /* Removendo o padding desnecessário no mobile */
+  #aulas .carousel-inner {
+    padding-bottom: 0;
+  }
+
+  /* Espaço maior entre o título e o carrossel */
+  #aulas h2 {
+    margin-bottom: 2rem;
+  }
+
+  /* Ajuste da legenda no mobile */
+  .carousel-caption {
+    bottom: 10px !important;
+    left: 10px !important;
+    right: 10px !important;
+    padding: 0.5rem 1rem !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    font-size: 1rem;
+    border-radius: 6px;
+    max-width: calc(100% - 20px);
+    z-index: 1;
+    /* Mantendo a legenda atrás dos botões */
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+  }
+
+  /* Ajuste de altura do carrossel para o mobile */
+  .carousel-inner {
+    min-height: 80vh;
+  }
+}
+
+/*================ Cta-Final ==================*/
+
+.cta-final {
+  background: url('./assets/hogwarts-express.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 2rem;
+  position: relative;
+  font-family: 'Cormorant', serif;
+}
+
+.cta-final::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.594);
+  z-index: 0;
+}
+
+.cta-container {
+  position: relative;
+  z-index: 1;
+}
+
+.cta-final h2 {
+  font-size: 2.8rem;
+  text-shadow: 0 0 8px #d4af37cc;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.subtexto {
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
+  text-shadow: 0 0 5px #bfa854;
+}
+
+.countdown-timer {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #f5e050;
+}
+
+.cta-botao {
+  background: #d4af37;
+  color: #1a1a1a;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.cta-botao:hover {
+  background: #f5e050;
+  transform: scale(1.05);
+}
+
+/*=============== Rodapé ===============*/
+
+
+/* Estilos gerais para o rodapé */
+.footer {
+ 
+  width: 100%;
+  text-align: center;
+  background-color: #000000;
+  color: white;
+  padding: 20px 20px;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+  /* Tira a fixação */
+}
+
+/* Estilos responsivos para dispositivos móveis */
+@media (max-width: 768px) {
+  .footer p{
+    font-size: 10px !important;
+    padding: 5px 40px;
+    /* Ajusta ainda mais o padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer p{
+    font-size: 10px !important;
+    padding: 5px 40px;
+    /* Ajusta ainda mais o padding */
+  }
+}

@@ -1,0 +1,92 @@
+🧙‍♂️ Título do projeto:
+"Sua Jornada em Hogwarts Começa Aqui"
+
+🎨 Estrutura Visual da Landing Page (Wireframe/Mockup para Figma)
+🟫 1. Hero Section (Tela inicial)
+Objetivo: Impactar com visual mágico + chamada principal
+
+Fundo: Imagem ou vídeo com o castelo de Hogwarts à noite
+
+Texto:
+
+“Você recebeu sua carta?”
+
+Subtítulo: “Descubra sua casa, prepare seu material e embarque para Hogwarts.”
+
+Botão: Receber minha carta ✨ → rola para seção do chapéu seletor
+
+🟨 2. Chapéu Seletor (Interação)
+Objetivo: Simular a escolha da casa de Hogwarts
+
+Texto: “O Chapéu Seletor decidirá sua casa…”
+
+Botão grande: Sortear minha casa
+
+Resultado animado (ex: aparece “Grifinória 🦁” com efeito mágico)
+
+Casas com ícones e cores:
+
+🦁 Grifinória (vermelho)
+
+🐍 Sonserina (verde)
+
+🦅 Corvinal (azul)
+
+🦡 Lufa-Lufa (amarelo)
+
+🟩 3. Materiais Escolares (Cards Interativos)
+Objetivo: Mostrar materiais de forma visual
+
+Título: “Estes são seus materiais para o novo semestre”
+
+Grid com 4 a 6 cards:
+
+Varinha (Olivaras)
+
+Livro de Feitiços
+
+Caldeirão
+
+Roupa de gala
+
+Hover effect: ilumina o item com brilho mágico
+
+🟦 4. Professores e Aulas (Listagem ou Slider)
+Objetivo: Mostrar parte do “mundo mágico” com personagens fictícios ou reais
+
+Cards horizontais com imagem, nome e disciplina:
+
+Minerva McGonagall – Transfiguração
+
+Severus Snape – Poções
+
+Pomona Sprout – Herbologia
+
+🟥 5. Chamada Final / CTA
+Objetivo: Encerrar com uma ação clara
+
+Texto grande: “O Expresso de Hogwarts parte em breve...”
+
+Timer regressivo até uma data fictícia (contagem em JS)
+
+Botão: Embarcar agora no Expresso 🚂
+
+🟪 6. Rodapé (Footer)
+Links fictícios: Sobre | Contato com Corujas | Termos de Magia
+
+Pequena assinatura: “Feito por [Seu Nome] com magia e React 🪄”
+
+📐 Sugestões técnicas de design:
+Tipografia: Fonte estilo Harry Potter ou serifada clássica (ex: "Cinzel", "Cormorant")
+
+Cores: Tons escuros (azul petróleo, dourado, preto), detalhes com brilho
+
+Estilo: Místico, antigo, mas moderno e responsivo
+
+Animações: Simples no scroll, efeitos ao clicar ou sortear casa
+
+Se quiser:
+✅ Posso criar esse design básico no Figma e te passar o link (basta confirmar que você quer isso).
+✅ Ou posso gerar um layout inicial em código com React + CSS/Styled Components baseado nesse design.
+
+O que prefere?

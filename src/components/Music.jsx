@@ -5,6 +5,7 @@ export default function MusicPlayer() {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
 
+  const audioSrc = import.meta.env.BASE_URL + 'music.mp3';
 
   const togglePlay = () => {
     if (!audioRef.current) return;
@@ -25,7 +26,7 @@ export default function MusicPlayer() {
   return (
     <>
       <audio ref={audioRef} loop>
-        <source src="/projeto-harry/music.mp3" type="audio/mpeg" />
+        <source src={audioSrc} type="audio/mpeg" />
         Seu navegador não suporta áudio.
       </audio>
 

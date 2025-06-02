@@ -1,35 +1,43 @@
 import React from 'react';
 import MaterialCard from './MaterialCard';
 
+// Importe todas as imagens para o bundler entender e gerar os caminhos corretos
+import varinha from '../assets/materiais-varinha.jpg';
+import livro from '../assets/materiais-livro.png';
+import caldeirao from '../assets/materiais-caldeirao.png';
+import roupa from '../assets/materiais-roupa.png';
+import coruja from '../assets/materiais-coruja.png';
+import vassoura from '../assets/materiais-vassoura.png';
+
 const materiaisData = [
   {
     name: 'Olivaras',
-    image: './src/assets/materiais-varinha.jpg',
+    image: varinha,
     description: 'As varinhas mais poderosas, feitas das madeiras mais raras.',
   },
   {
     name: 'Livro de Feitiços',
-    image: './src/assets/materiais-livro.png',
+    image: livro,
     description: 'Essencial para aprender os feitiços mais importantes.',
   },
   {
     name: 'Caldeirão',
-    image: './src/assets/materiais-caldeirao.png',
+    image: caldeirao,
     description: 'Use para preparar poções mágicas de forma segura.',
   },
   {
     name: 'Roupa de Gala',
-    image: './src/assets/materiais-roupa.png',
+    image: roupa,
     description: 'Roupa especial para os eventos mais importantes.',
   },
   {
     name: 'Coruja de entrega',
-    image: './src/assets/materiais-coruja.png',
+    image: coruja,
     description: 'Para enviar cartas e itens para os familiares',
   },
   {
     name: 'Vassoura Mágica',
-    image: './src/assets/materiais-vassoura.png',
+    image: vassoura,
     description: 'Ideal para partidas de Quadribol emocionantes',
   },
 ];

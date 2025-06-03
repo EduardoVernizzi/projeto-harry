@@ -39,7 +39,7 @@ html {
 /*=========== Chamada Principal ==============*/
 
 .chamada-principal {
-  background-image: url("./assets/main1.jpg");
+  background-image: url("https://wallpapercat.com/w/full/e/f/4/2164305-2560x1440-desktop-hd-hogwarts-castle-background-image.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -597,7 +597,7 @@ section {
 
 /* Estilos gerais para o rodapé */
 .footer {
- 
+
   width: 100%;
   text-align: center;
   background-color: #000000;
@@ -611,7 +611,7 @@ section {
 
 /* Estilos responsivos para dispositivos móveis */
 @media (max-width: 768px) {
-  .footer p{
+  .footer p {
     font-size: 10px !important;
     padding: 5px 40px;
     /* Ajusta ainda mais o padding */
@@ -619,7 +619,7 @@ section {
 }
 
 @media (max-width: 480px) {
-  .footer p{
+  .footer p {
     font-size: 10px !important;
     padding: 5px 40px;
     /* Ajusta ainda mais o padding */

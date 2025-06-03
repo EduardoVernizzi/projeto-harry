@@ -1,23 +1,27 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function MusicPlayer() {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
 
-  const audioSrc = import.meta.env.BASE_URL + 'music.mp3';
+  const audioSrc = 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3';
+
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.volume = 0.2; // define volume baixo ao montar
+    }
+  }, []);
 
   const togglePlay = () => {
     if (!audioRef.current) return;
 
     if (isPlaying) {
       audioRef.current.pause();
-      audioRef.current.volume = 1;
     } else {
       audioRef.current.play().catch((error) => {
         console.log('Erro ao tentar tocar áudio:', error);
       });
-      audioRef.current.volume = 0.2;
     }
 
     setIsPlaying(!isPlaying);

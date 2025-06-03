@@ -43,7 +43,7 @@ export default function CasasHogwarts() {
         <div className="message-container">
 
           <img
-            src="/projeto-harry/hat.gif"  // Coloque seu gif animado do chapéu seletor dentro da pasta public com esse nome
+            src="https://i.pinimg.com/originals/8f/29/26/8f292677875dc83ce30c40c94a72c0e3.gif"  // Coloque seu gif animado do chapéu seletor dentro da pasta public com esse nome
             alt="Chapéu Seletor Animado"
               className="gif-chapeu"
           />

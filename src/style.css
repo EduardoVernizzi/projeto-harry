@@ -50,6 +50,12 @@ html {
   padding-top: 60px;
 }
 
+@media (max-width: 768px) {
+  .chamada-principal {
+    background-attachment: scroll;
+  }
+}
+
 .titulo-chamada {
   color: #d4af37;
   font-size: 3em;

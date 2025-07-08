@@ -94,8 +94,8 @@ const FinalCall = () => {
         </div>
       </section>
 
-      <footer className="footer" style={{ padding: '1rem', textAlign: 'center' }}>
-        <p>&copy; {new Date().getFullYear()} Carlos Eduardo Vernizzi. Todos os direitos reservados.</p>
+      <footer className="footer" style={{ padding: '1rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <p style={{ margin: '0', }}>&copy; {new Date().getFullYear()} Carlos Eduardo Vernizzi. Todos os direitos reservados.</p>
       </footer>
     </>
   );

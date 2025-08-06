@@ -2,14 +2,11 @@ import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Header() {
-
   const [navbarOpen, setNavbarOpen] = useState(false);
 
- 
   const toggleNavbar = () => {
     setNavbarOpen(!navbarOpen);
   };
-
 
   const closeNavbar = () => {
     setNavbarOpen(false);
@@ -23,12 +20,10 @@ export default function Header() {
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCentered"
           aria-controls="navbarCentered"
           aria-expanded={navbarOpen ? "true" : "false"}
           aria-label="Toggle navigation"
-          onClick={toggleNavbar}  // Toggle do estado do menu
+          onClick={toggleNavbar}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -36,19 +31,19 @@ export default function Header() {
         <div className={`collapse navbar-collapse ${navbarOpen ? "show" : ""}`} id="navbarCentered">
           <ul className="navbar-nav mx-auto me-5 mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">Início</a>
+              <a className="nav-link active" href="#" onClick={closeNavbar}>Início</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#chapeu-seletor" >Chápeu seletor</a>
+              <a className="nav-link" href="#chapeu-seletor" onClick={closeNavbar}>Chápeu seletor</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#materiais">Materiais</a>
+              <a className="nav-link" href="#materiais" onClick={closeNavbar}>Materiais</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#aulas">Aulas</a>
+              <a className="nav-link" href="#aulas" onClick={closeNavbar}>Aulas</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#cta-final">Começar</a>
+              <a className="nav-link" href="#cta-final" onClick={closeNavbar}>Começar</a>
             </li>
           </ul>
         </div>

@@ -8,6 +8,13 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --cor-fundo: #0d0d0d;
+  --cor-dourado: #d4af37;
+  --cor-dourado-claro: #ffd700;
+  --cor-branco: #ffffff;
+}
+
 
 /*============== Header ======================*/
 
@@ -33,6 +40,10 @@ html {
   color: #d4af37;
 }
 
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
 
 
 
